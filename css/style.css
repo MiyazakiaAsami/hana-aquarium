@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+/*-------------------------
+共通部分
+-------------------------*/
+
+html {
+    font-size: 100%;
+}
+
+* {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* セクションタイトル */
+.info__title {
+    background-color: #c4f4f6;
+    font-size: 22px;
+    height: 66px;
+    padding: 20px 0 20px 60px;
+    background-image: url(..//images/icon.png);
+    background-size: 22px ;
+    background-position: 29px 25px;
+    max-width: 100%;
+}
+
+/* パソコン版 */
+@media (min-width: 769px) {
+    .info__title {
+        font-size: 30px;
+        height: 99px;
+        padding: 30px 0 30px 90px;
+        background-size: 33px ;
+        background-position: 50px 40px;
+    }
+}
+
+/*-------------------------
+header
+-------------------------*/
+
+header {
+    background-color: #01214f;
+    color: #fff;
+}
+
+.logo {
+    width: 200px;
+    margin-top: 43px;
+}
+
+.main__nav {
+    display: flex;
+    font-size: 18px;
+    margin-top: 43px;
+    margin-bottom: 31px;
+}
+
+header li {
+    padding: 7px;
+}
+
+.page__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #AFDFE4
+}
+
+/* パソコン版 */
+@media (min-width: 769px) {
+header li {
+    padding: 15px;
+}
+
+.page__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+    height: 134px;
+}
+
+.logo {
+    margin: 38px 0;
+}
+
+.main__nav {
+    font-size: 25px;
+}
+}
+
+/*-------------------------
+新着情報
+-------------------------*/
+
+.important {
+    color: #d63636;
+}
+
+.post__date,
+.post__cat {
+    font-size: 18px;
+}
+
+.post__cat {
+    padding-left: 1rem;
+}
+
+.post__item {
+    padding-left: 1rem;
+    padding-top: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.news{
+    border: 3px solid #c4f4f6;
+    padding: 5%;
+}
+
+/* パソコン版 */
+@media (min-width: 769px) {
+    .post__info,
+    .post__date,
+    .post__cat {
+        display: flex;
+        font-size: 20px;
+    }
+
+    .post__item {
+        font-size: 16px;
+    }
+
+    .post__item:nth-of-type(1),
+    .post__item:nth-of-type(2) {
+        margin-bottom: 55px;
+    }
+
+}
+
+/*-------------------------
+水族館の仲間たち
+-------------------------*/
+
+.members__info {
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.members__info__line {
+    margin-bottom: 23px;
+    padding-left: 5px;
+}
+
+.phote {
+    width: 300px;
+    height: auto;
+}
+
+.coment {
+    font-size: 18px;
+    margin-top: 17px;
+}
+
+.member {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.members {
+    border: 3px solid #c4f4f6;
+    background-color: #fff;
+    padding: 5%;
+}
+
+.member__background{
+    background-color: #0080a4;
+}
+
+/* パソコン版 */
+@media (min-width: 769px) {
+    .members__info {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+}
+
+.coment {
+    margin-top: 24px;
+}
+
+.members__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.member:nth-child(-n+2){
+    margin-right: 5px;
+}
+}
+
+@media (min-width: 1000px) {
+    .coment {
+        font-size: 24px;
+        margin-top: 24px;
+    }
+}
+
+/*-------------------------
+料金
+-------------------------*/
+.fee {
+    padding: 5%;
+}
+table {
+    border-collapse:collapse;
+    font-size: 18px;
+    /* margin: 50px; */
+}
+
+th,
+td {
+    border: 2px solid #808080;
+    width: 280px;
+    height: 57px;
+}
+
+td {
+    text-align: end;
+    padding-right: 1.25rem;
+}
+
+th {
+    font-weight: normal;
+    background-color: rgba(196,244,246,0.2)
+}
+
+table span {
+    font-size: 14px;
+}
+
+.fee {
+    display: flex;
+    justify-content: center;
+    border: 3px solid #c4f4f6;
+    background-color: #fff;
+}
+
+.fee__background {
+    background-image: url(..//images/fish-bg.png);
+    background-repeat: round;
+}
+
+.sma {
+    display: block;
+}
+
+/* パソコン版 */
+@media (min-width: 769px) {
+
+    table {
+        font-size: 24px;
+    }
+
+    table span {
+        font-size: 20px; 
+    }
+
+    th{
+        width: 540px;
+        height: 90px;
+}
+
+    td {
+        width: 551px;
+    }
+
+    .sma{
+        display: none;
+    }
+}
+
+
+/*-------------------------
+フッター
+-------------------------*/
+
+footer {
+    background-color: #01214f;
+    color: #fff;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* パソコン版 */
+@media (min-width: 769px) {
+    footer {
+        font-size: 14px;
+        height: 80px;
+    }
+}
